@@ -11,9 +11,6 @@ client.on('message', message => {
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
-
 bot.on('message', message => {
 
   if (message.content.startsWith('?play')) {
@@ -45,3 +42,6 @@ bot.on('message', message => {
   }
 
 })
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
