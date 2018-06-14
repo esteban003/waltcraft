@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'wc?help') {
-    msg.reply('***help n"est pas encore disponible***
+    msg.reply('***help n"est pas encore disponible***')
   }
 });
 client.login('NDA0MDMzNDQyMzM0OTAwMjI0.DgQCyw._IMh_h2J3v80pTmHBQrkwqXcE6Q');
