@@ -7,7 +7,21 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'wc?help') {
-    msg.reply('***le help n"est pas encore disponible***')
+    msg.reply('***Voici le help 
+
+wc?help : Voir les commande
+wc?close : Message pour serveur Indisponible
+wc?welcome : souhaité la bienvenue
+***')
   }
+client.on('message', msg => {
+  if (msg.content === 'wc?close') {
+    msg.reply('***le serveur est actuellement en développement, nous n`avons pas de date pour le moment ***')
+  }
+client.on('message', msg => {
+  if (msg.content === 'wc?welcome') {
+    msg.reply('***[FR] Bonjour et bienvenue sur le discord de WaltCraft [EN] Hello and welcome to the discord of WaltCraft***')
+  }
+
 });
 client.login('NDA0MDMzNDQyMzM0OTAwMjI0.DgQCyw._IMh_h2J3v80pTmHBQrkwqXcE6Q');
