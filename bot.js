@@ -1,8 +1,14 @@
-const Discord = require('discord.js')
-const bot = new Discord.Client()
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-bot.on('ready', function () {
-  console.log("Je suis connecté !")
-})
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
-bot.login('BOT_TOKEN')
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
+client.login('BOT_TOKEN');
