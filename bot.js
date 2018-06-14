@@ -13,7 +13,7 @@ client.on('message', msg => {
 
 bot.on('message', message => {
 
-  if (message.content.startsWith('!play')) {
+  if (message.content.startsWith('?play')) {
     // On récupère le premier channel audio du serveur
     let voiceChannel = message.guild.channels
       .filter(function (channel) { return channel.type === 'voice' })
