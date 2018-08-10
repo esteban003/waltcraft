@@ -23,4 +23,4 @@ client.on('message', msg => {
   }
 
 });
-client.login('BO_TOKEN');
+client.login('BOT_TOKEN');
